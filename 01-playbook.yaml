@@ -1,7 +1,7 @@
-name: ping the node
-hosts: mongodb
-#list of list/modules/collections
-tasks:
+-name: ping the node
+  hosts: mongodb
+  #list of list/modules/collections
+  tasks:
   -name: pinging the server
 
   #This is map
