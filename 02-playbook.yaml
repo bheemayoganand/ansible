@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install nginx
-    ansible.builtin.ping:
+    ansible.builtin.yum:
       name: nginx
       state: installed
   - name: start nginx
