@@ -105,6 +105,31 @@ YAML
 ----------------
 indentaion --> proper gap/space
 
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 o1-playbook.yaml
+
+name: ping the node
+hosts: mongodb
+
+tasks:
+- name: pinging the server
+  ansible.builtin.ping:
+
+02-nginx.yaml:
+
+- name: Install and Run nginx
+  hosts: mongodb
+  become: yes
+  tasks:
+- name: Install nginx
+  ansible.builtin.ping:
+    name: nginx
+    state: installed
+-name: start nginx
+ ansible.builtin.service:
+   name: nginx
+   state: started
+
+
 Playbooks --> YAML
 -----------------------
 shell --> ${VAR_NAME} or $VAR_NAME
