@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: localhost
-  vars-prompt:
+  vars_prompt:
   - name: USERNAME
     prompt: Please enter your name
     private: false # you can see the value entered on screens
