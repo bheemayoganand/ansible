@@ -2,7 +2,7 @@
   hosts: mongodb #managing the ansible server itself
   become: yes
   vars_files:
-  - variables.yaml
+  - Variables.yaml
   tasks:
   - name: printing variables
     ansible.builtin.debug:
